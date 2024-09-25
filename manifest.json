@@ -1,0 +1,16 @@
+{
+    "name": "Connect Workshop Testapp",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "theme_color": "#d30000",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "./media/manifest/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
