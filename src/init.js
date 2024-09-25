@@ -144,4 +144,18 @@ export async function init(setupScene = () => {}, onFrame = () => {}) {
 	renderer.setAnimationLoop(animate);
 
 	document.body.appendChild(VRButton.createButton(renderer));
+
+	window.addEventListener('load', () => { onRequestSession(); });
 }
+
+function onRequestSession() {
+ if (navigator.xr && navigator.xr.isSessionSupported) {
+   navigator.xr.requestSession('immersive-vr', {
+       optionalFeatures: ['local-floor', 'layers', 'bounded-floor'],
+     })
+     .then((session) => {
+       renderer.xr.setSession(session);
+     });
+ }
+}
+
