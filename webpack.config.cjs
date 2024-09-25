@@ -35,7 +35,10 @@ module.exports = {
 			template: './src/index.html',
 		}),
 		new CopyPlugin({
-			patterns: [{ from: 'src/assets', to: 'assets' }],
+			patterns: [
+				{ from: 'manifest.json', to: 'manifest.json' },
+				{ from: '.well-known/assetlinks.json', to: '.well-known/assetlinks.json' },
+				{ from: 'src/assets', to: 'assets' }],
 		}),
 	],
 	devtool: 'source-map',
