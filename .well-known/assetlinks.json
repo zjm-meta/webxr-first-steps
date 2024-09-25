@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "com.zjm.test.twa.win",
-        "sha256_cert_fingerprints": ["A6:E4:00:C2:0C:24:45:08:8E:A6:E6:52:E3:C2:65:95:8E:E6:86:E7:9D:07:4A:08:EA:1D:87:C5:58:3B:22:D5"]
-      }
-}]
